@@ -30,6 +30,8 @@ jobs:
           echo $BRANCH_NAME 
           echo "::set-output name=version::$VERSION"
           echo "::set-output name=branch_name::$BRANCH_NAME"
+          echo "version: $VERSION"
+          echo "branch_name: $BRANCH_NAME"
 
       - name: Checkout
         uses: actions/checkout@v2
