@@ -83,6 +83,7 @@ jobs:
           echo SUPABASE_URL=${{ secrets.SUPABASE_URL }} >> .env
           echo SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }} >> .env
           echo SUPABASE_JWT_SECRET=${{ secrets.SUPABASE_JWT_SECRET }} >> .env
+          echo CLOUD_TYPE=1 >> .env
         working-directory: frontend/appflowy_flutter
 
       - name: Install flutter
@@ -167,6 +168,7 @@ jobs:
           echo SUPABASE_URL=${{ secrets.SUPABASE_URL }} >> .env
           echo SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }} >> .env
           echo SUPABASE_JWT_SECRET=${{ secrets.SUPABASE_JWT_SECRET }} >> .env
+          echo CLOUD_TYPE=1 >> .env
         working-directory: frontend/appflowy_flutter
 
       - name: Install flutter
@@ -271,6 +273,7 @@ jobs:
           touch .env
           echo SUPABASE_URL=${{ secrets.SUPABASE_URL }} >> .env
           echo SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }} >> .env
+          echo CLOUD_TYPE=1 >> .env
         working-directory: frontend/appflowy_flutter
 
       - name: Install flutter
